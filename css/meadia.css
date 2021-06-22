@@ -1,0 +1,42 @@
+@media (prefers-color-scheme: dark) {
+    :root{
+        --body: #151437;
+        --txt: #fff;
+        --dots: #EBEBEB;
+        --title-tab: #151437;
+        --footer-link: #fff;
+    }
+    .logo::before{
+        content: url(../img/svg/logo-dark.svg);
+    }
+}
+@media(max-width: 1440px)
+{
+ .about::after,
+ .works::before
+ {
+     display: none;
+     
+ }
+}
+
+
+@media (max-width: 684px){
+    .about__work{
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px){
+    
+    .header__nav::before,
+    .header__nav::after,
+    .header__content::after,
+    .header__content::before,
+    .capabilities .container::after,
+    .capabilities .container::before{
+        display: none;
+    }
+}
